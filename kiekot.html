@@ -7,17 +7,132 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+    <header>
         <h1>Frisbeegolf Kiekot</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
-                <li><a href="kiekot.html">Kiekot</a></li>
+                <li><a href="kiekot.html" aria-current="page">Kiekot</a></li>
                 <li><a href="saannot.html">Säännöt</a></li>
                 <li><a href="ohjeet.html">Ohjeet</a></li>
                 <li><a href="radat.html">Radat</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <h2>Kiekkotyypit</h2>
+            <p>
+                Frisbeegolfkiekot jaetaan käyttötarkoituksen mukaan neljään päätyyppiin.
+                Aloittelija pärjää hyvin yhdellä putterilla, midarilla ja väylädraiverilla.
+            </p>
+            <div class="kortit">
+                <article class="kortti">
+                    <h3>Putteri</h3>
+                    <p>
+                        Hidas ja tylppäreunainen kiekko, joka lentää suoraan ja tarttuu
+                        hyvin koriin. Käytetään puttaamiseen ja lyhyisiin lähestymisiin.
+                    </p>
+                </article>
+                <article class="kortti">
+                    <h3>Midari</h3>
+                    <p>
+                        Keskimatkan kiekko, joka on helppo heittää suoraan. Sopii
+                        lähestymisiin ja lyhyille väylille, ja on aloittelijalle hyvä
+                        ensimmäinen avauskiekko.
+                    </p>
+                </article>
+                <article class="kortti">
+                    <h3>Väylädraiveri</h3>
+                    <p>
+                        Nopeampi kiekko, jolla saa lisää pituutta mutta joka on vielä
+                        hallittava. Hyvä valinta kapeille metsäväylille.
+                    </p>
+                </article>
+                <article class="kortti">
+                    <h3>Pituusdraiveri</h3>
+                    <p>
+                        Terävin ja nopein kiekko pitkiin avauksiin. Vaatii paljon
+                        heittovoimaa, joten aloittelijalle se on usein liian vaikea.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Lentonumerot</h2>
+            <div class="kortit">
+                <article class="kortti kortti-levea">
+                    <p>Useimpiin kiekkoihin on painettu neljä lentonumeroa, jotka kuvaavat kiekon lentoa:</p>
+                    <ul>
+                        <li><strong>Nopeus</strong> (1-14): kuinka kovaa kiekko pitää heittää, jotta se lentää oikein.</li>
+                        <li><strong>Liito</strong> (1-7): kuinka hyvin kiekko pysyy ilmassa.</li>
+                        <li><strong>Kääntö</strong> (+1 - -5): kuinka paljon kiekko kääntyy lennon alussa oikealle (oikeakätisen rystyheitossa).</li>
+                        <li><strong>Feidi</strong> (0-5): kuinka voimakkaasti kiekko kaartaa vasemmalle lennon lopussa.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Kiekot tarkemmin</h2>
+            <article class="kiekko">
+                <div class="kiekko-kuvat">
+                    <div class="kuvapaikka kuvapaikka-yla">kuva1putterietu</div>
+                    <div class="kuvapaikka kuvapaikka-profiili">kuva2putteriprofiili</div>
+                </div>
+                <div class="kortti">
+                    <h3>Putteri</h3>
+                    <p>
+                        Hidas ja tylppäreunainen kiekko, joka lentää suoraan ja tarttuu hyvin koriin. Putteria käytetään puttaamiseen ja lyhyisiin lähestymisiin, mutta sillä voi heittää myös lyhyitä avauksia. Moni pelaaja pitää bägissään kahta samanlaista putteria: toinen puttaamiseen ja toinen heittoihin.
+                    </p>
+                </div>
+            </article>
+
+            <article class="kiekko">
+                <div class="kiekko-kuvat">
+                    <div class="kuvapaikka kuvapaikka-yla">kuva1midarietu</div>
+                    <div class="kuvapaikka kuvapaikka-profiili">kuva2midariprofiili</div>
+                </div>
+                <div class="kortti">
+                    <h3>Midari</h3>
+                    <p>
+                        Keskimatkan kiekko, joka on helppo heittää suoraan ja tarkasti. Midari sopii lähestymisiin ja lyhyille väylille, ja se on aloittelijalle hyvä ensimmäinen avauskiekko, koska se antaa anteeksi epätarkan heiton.
+                    </p>
+                </div>
+            </article>
+
+            <article class="kiekko">
+                <div class="kiekko-kuvat">
+                    <div class="kuvapaikka kuvapaikka-yla">kuva1vayladraiverietu</div>
+                    <div class="kuvapaikka kuvapaikka-profiili">kuva2vayladraiveriprofiili</div>
+                </div>
+                <div class="kortti">
+                    <h3>Väylädraiveri</h3>
+                    <p>
+                        Nopeampi kiekko, jolla saa lisää pituutta mutta joka on vielä hallittava. Väylädraiveri on hyvä valinta kapeille metsäväylille, joilla tarkkuus on tärkeämpää kuin maksimipituus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="kiekko">
+                <div class="kiekko-kuvat">
+                    <div class="kuvapaikka kuvapaikka-yla">kuva1pituusdraiverietu</div>
+                    <div class="kuvapaikka kuvapaikka-profiili">kuva2pituusdraiveriprofiili</div>
+                </div>
+                <div class="kortti">
+                    <h3>Pituusdraiveri</h3>
+                    <p>
+                        Terävin ja nopein kiekko pitkiin avauksiin avoimilla väylillä. Pituusdraiveri vaatii paljon heittovoimaa toimiakseen oikein, joten aloittelijalle se on usein liian vaikea ja kaartaa heti vasemmalle.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Juhon Frisbeegolf-sivusto</p>
+    </footer>
 </body>
 </html>

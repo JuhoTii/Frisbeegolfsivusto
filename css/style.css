@@ -6,9 +6,12 @@ body {
     background-color: #f5f7f5;
     font-size: 18px;
     line-height: 1.6;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Arial, sans-serif;
     margin: 0 0 0.5rem 0;
 }
@@ -22,6 +25,11 @@ h2 {
     color: #2e7d32;
 }
 
+h3 {
+    font-size: 1.3rem;
+    color: #2e7d32;
+}
+
 header {
     background-color: #2e7d32;
     color: white;
@@ -29,9 +37,10 @@ header {
     border-bottom: 4px solid #2e2c29;
 }
 
+/* flexi navigaatiota */
 nav ul {
     list-style: none;
-    display: flex; 
+    display: flex;
     gap: 1rem;
     padding: 0;
     margin: 0.5rem 0 0 0;
@@ -41,28 +50,127 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.2rem 0.5rem;
 }
 
 nav a:hover {
     color: #000000;
 }
 
+/* yläpalkin aktiivinen sivusto merkintä */
+nav a[aria-current="page"] {
+    background-color: white;
+    color: #2e7d32;
+}
+
 main {
     padding: 1rem;
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 section {
+    margin-bottom: 2rem;
+}
+
+/* etusivun layoutti jossa tekstit on vasemmalla ja kuvat oikeella */
+.etusivu {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    max-width: 1300px;
+}
+
+.reunakuva img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* kortit gridillä */
+.kortit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.kortti {
     background-color: white;
     border: 1px solid #ddd;
-    border-left: 4px solid #2e7d32;
+    border-top: 4px solid #2e7d32;
     padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
+}
+
+.kortti-levea {
+    grid-column: 1 / 5;
+}
+
+/* listat korteissa ilman palloja */
+.kortti ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* kiekko sivun asettelu kuvat vasemmalla tekstit oikeella */
+.kiekko {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* valmiit paikat kuville kunhan joudan ottamaan */
+.kuvapaikka {
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.kuvapaikka-yla {
+    height: 250px;
+}
+
+.kuvapaikka-profiili {
+    height: 80px;
+}
+
+/* paikka videolle */
+.videopaikka {
+    height: 450px;
+}
+
+/* radat sivu on leveämpi, jotta kuville jää tilaa */
+.radat-sivu {
+    max-width: 1500px;
+}
+
+/* radat sivun layoutti */
+.rata {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* radan nimi keskelle molempien laatikoiden yläpuolelle */
+.radan-nimi {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+/* kuvien layoutti ratasivulla */
+.ratakuvat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.ratakuvat .kuvapaikka {
+    height: 320px;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f0f0f0;
-}
+    background-color:
