@@ -63,9 +63,12 @@ nav a[aria-current="page"] {
     color: #2e7d32;
 }
 
+/* kaikilla sivuilla sama sisällön max leveys */
 main {
     padding: 1rem;
-    max-width: 1100px;
+    max-width: 1300px;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
@@ -78,7 +81,6 @@ section {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 2rem;
-    max-width: 1300px;
 }
 
 .reunakuva img {
@@ -140,11 +142,6 @@ section {
     height: 450px;
 }
 
-/* radat sivu on leveämpi, jotta kuville jää tilaa */
-.radat-sivu {
-    max-width: 1500px;
-}
-
 /* radat sivun layoutti */
 .rata {
     display: grid;
@@ -173,4 +170,6 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color:
+    background-color: #2e2c29;
+    color: white;
+}
