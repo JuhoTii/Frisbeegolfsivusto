@@ -11,9 +11,7 @@ body {
     min-height: 100vh;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: Arial, sans-serif;
     margin: 0 0 0.5rem 0;
 }
@@ -124,6 +122,13 @@ section {
     grid-template-columns: 1fr 2fr;
     gap: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.kiekko-kuvat img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 /* valmiit paikat kuville kunhan joudan ottamaan */
