@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radat - Frisbeegolf</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <h1>Frisbeegolf Radat</h1>
@@ -41,10 +43,11 @@
                     </ul>
                 </div>
                 <div class="kortti ratakuvat">
-                    <div class="kuvapaikka kuvapaikka-yla">kuva1epila</div>
+                    <img class="ratakartta" src="images/epila-ratakartta.jpg"
+                        alt="Epilän frisbeepuiston ratakartta, jossa näkyvät 15 väylää lammen ympärillä" width="1200"
+                        height="794">
                     <div class="kuvapaikka kuvapaikka-yla">kuva2epila</div>
                     <div class="kuvapaikka kuvapaikka-yla">kuva3epila</div>
-                    <div class="kuvapaikka kuvapaikka-yla">kuva4epila</div>
                 </div>
             </article>
 
@@ -66,10 +69,21 @@
                     </ul>
                 </div>
                 <div class="kortti ratakuvat">
-                    <div class="kuvapaikka kuvapaikka-yla">kuva1sentteri</div>
-                    <div class="kuvapaikka kuvapaikka-yla">kuva2sentteri</div>
-                    <div class="kuvapaikka kuvapaikka-yla">kuva3sentteri</div>
-                    <div class="kuvapaikka kuvapaikka-yla">kuva4sentteri</div>
+                    <img class="ratakartta" src="images/sentteri-ratakartta.jpg"
+                        alt="Tampereen frisbeegolfkeskuksen ratakartta, jossa näkyvät 27 väylää Alasjärven rannalla"
+                        width="1200" height="803">
+                    <figure>
+                        <video controls width="720" height="1280">
+                            <source src="video/sentteri-vayla18.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Väylä 18, Major-kisat</figcaption>
+                    </figure>
+                    <figure>
+                        <video controls width="720" height="1280">
+                            <source src="video/sentteri-metsavayla.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Metsäväylä, Major-kisat</figcaption>
+                    </figure>
                 </div>
             </article>
         </section>
@@ -79,4 +93,5 @@
         <p>&copy; 2026 Juhon Frisbeegolf-sivusto</p>
     </footer>
 </body>
+
 </html>
